@@ -220,17 +220,21 @@
 
 
 // ============================================================================= //
+// const elementsLI = document.querySelectorAll("li");
+// console.log(elementsLI);
 
-const elementsLI = document.querySelectorAll("li");
-console.log(elementsLI);
+// elementsLI.forEach( listItem => {
+//     listItem.addEventListener("click", () => { console.log("clicked!!!")});
 
-elementsLI.forEach( listItem => {
-    listItem.addEventListener("click", () => { console.log("clicked!!!")});
+//     //başka bir yöntem.
+//     listItem.addEventListener("click", clickFunct);    
+// });
 
-    //başka bir yöntem.
-    listItem.addEventListener("click", clickFunct);    
-});
+// function clickFunct(e) {
+//     console.log(e.target.innerText);
+// }
 
-function clickFunct(e) {
-    console.log(e.target.innerText);
-}
+
+
+
+// ======================= example X ================================= //
