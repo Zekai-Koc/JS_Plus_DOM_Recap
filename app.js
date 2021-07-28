@@ -139,7 +139,98 @@
 
 
 
-videoda 1 saat 45 dakika tamam
-https://lms.clarusway.com/mod/page/view.php?id=6753
+// we will change our list element's attributes in accordance with their initial text.
+
+// const elementsLI = document.querySelectorAll("li");
+// // console.log(elementsLI);
+
+// // // let's check the elements and innerHTMLs:
+// // elementsLI.forEach(item => console.log(item));
+// // elementsLI.forEach(ele => console.log(ele.innerHTML));
+
+// // now let's have a long function for different purposes:
+// elementsLI.forEach( listItem => {
+//     // console.log(listItem);
+//     // console.log(listItem.innerHTML);
+//     // console.log(typeof listItem.innerHTML);
+//     if (listItem.innerText.includes("error")) listItem.setAttribute("class", "error");
+//     if (listItem.innerText.includes("success")) listItem.setAttribute("class", "success");
+//     // select the element on console and show the newly added classes on it.   
+// });
 
 
+
+
+// let's create a new p element on our html page and add some properties on sytle.css - uncomment
+
+// const myElem = document.querySelector(".hello");
+// console.log(myElem);
+// // let's access the style attributes of our element:
+// myElem.style.color = "red";
+// // show the new style on console by selecting the element.
+// myElem.style.fontWeight = "bold";
+// myElem.style.textDecoration = "line-through";
+// son iki satırdaki style özelliklerinin style.css'ten farklı olduğu, arada çizgi bulunmadığı...
+
+
+
+// // const myBanner = document.getElementById("myBanner");
+// const myBanner = document.querySelector("#myBanner");
+// console.log(myBanner);
+// // now, we want to add an additional class to our element.
+// console.log(myBanner.classList);  // show the methods on console.
+// console.log(typeof myBanner.classList);
+// // html sayfasında elemente "active" sınıfı ekleyip konsolda gösterelim, sonra kaldıralım.
+
+// myBanner.classList.add("active");
+// console.log(myBanner.classList);
+
+
+// ============================================================================= //
+// const element = document.querySelector("#today");
+// console.log(element);
+
+// const myElement = document.createElement("p");
+// // console.log(myElement);
+// myElement.innerText = "Wednesday";
+// console.log(myElement);
+
+// element.appendChild(myElement);
+
+
+
+// ============================================================================= //
+// const element = document.querySelector("#btn");
+// console.log(element);
+// element.addEventListener("click", clickFunction);
+
+// function clickFunction() {
+//     console.log("inside clickFunction");
+//     // let's change the inner text of our p element
+//     document.querySelector("#para").innerText = "qqqqqq";  // show it on console...
+// }
+
+// // check/show dom events on internet.
+// document.querySelector("#para").addEventListener("mouseenter", function() {
+//     alert("mouse entered.");
+//     // we can remove event listeners...
+//     // element.removeEventListener("click", clickFunction);
+// })
+
+
+
+// ============================================================================= //
+
+const elementsLI = document.querySelectorAll("li");
+console.log(elementsLI);
+
+elementsLI.forEach( listItem => {
+    listItem.addEventListener("click", () => { console.log("clicked!!!")});
+
+    //başka bir yöntem.
+    listItem.addEventListener("click", clickFunct);    
+});
+
+function clickFunct(e) {
+    console.log(e.target.innerText);
+}

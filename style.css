@@ -5,3 +5,17 @@
 .error {
     color: red
 }
+
+.hello {
+    color: blue;
+    font-size: 32px;
+}
+
+.bannerText {
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.active {
+    color: blue;
+}
